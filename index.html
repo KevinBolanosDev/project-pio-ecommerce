@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/image.ico" type="image/x-icon" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <div id="liveAlertPlaceholder" class="position-fixed top-0 start-50 translate-middle-x mt-3" style="z-index: 1050;"></div>
+    <!-- Navegación -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary fondo-nav sticky-top"
+      id="menu-navegacion"
+    >
+      <div class="container-fluid my-1">
+        <a href="#inicio active" class="navbar-brand" style="margin-left: 95px">
+          <img src="img/image.png" alt="" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+          style="margin-right: 100px"
+        >
+          <ul class="nav nav-tabs">
+            <li class="">
+              <a href="index.html" class="nav-link text-white">Inicio</a>
+            </li>
+            <li class="">
+              <a href="index.html#about" class="nav-link text-white"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="">
+              <a href="index.html#products" class="nav-link text-white"
+                >Productos</a
+              >
+            </li>
+            <li class="">
+              <a href="index.html#contact" class="nav-link text-white"
+                >Contacto</a
+              >
+            </li>
+            <li class="">
+              <a href="cart.html" class="nav-link text-white"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  /></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Información Principal -->
+      <section id="inicio" class="container-fluid">
+        <div
+          class="pb-2 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class=""><strong>School Study Shop</strong></h1>
+          <p class="lead">
+            El material que necesitas para el camino al conocimiento a un solo click.
+          </p>
+        </div>
+        <div class="container mb-4">
+          <div id="carouselExample" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 500px;">
+            <div class="carousel-inner ratio ratio-1x1">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/eyestetix-studio-NQPbgKW6bYw-unsplash.jpg" class="img-thumbnail d-block w-100 h-100 object-fit-cover" alt="Regreso a la escuela">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/lucas-george-wendt-sg-19vjTdy4-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Colores tono verde">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/twinkl-_qqlFMNINwI-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Mesa de estudio">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="img/alex-mccarthy-lAbUA2W-rfw-unsplash.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Libros">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Nosotros -->
+      <section class="container">
+        <h2 class="text-center" id="about">Sobre Nosotros</h2>
+
+        <p class="mb-4">
+          En School Study Shop somos tu tienda especializada en material escolar
+          y productos educativos. Desde 2024, estamos empezzando a convertirnos
+          en el referente online para estudiantes, familias y centros educativos
+          que buscan la mejor relación calidad-precio en equipamiento escolar.
+        </p>
+
+        <h2 class="text-center mb-4">Nuestro Catálago</h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Primera columna -->
+            <div class="col-md-5">
+              <h4 class="text-center">Material Escolar Básico</h4>
+              <ul class="mx-auto" style="width: fit-content">
+                <li>Cuadernos y libretas de las mejores marcas</li>
+                <li>Bolígrafos, lápices y material de escritura</li>
+                <li>Carpetas, archivadores y organizadores</li>
+                <li>Estuches y material de geometría</li>
+                <li>Sets escolares completos para todos los niveles</li>
+              </ul>
+            </div>
+
+            <div class="col-md-5">
+              <h4 class="text-center">Material Artístico</h4>
+              <ul class="mx-auto" style="width: fit-content">
+                <li>Acuarelas y pinturas premium</li>
+                <li>Blocks de dibujo profesional</li>
+                <li>Rotuladores y lápices de colores</li>
+                <li>Material para manualidades</li>
+                <li>Lienzos y caballetes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <h4 class="text-center">Mochilas y Equipamiento</h4>
+              <ul class="mx-auto" style="width: fit-content">
+                <li>Mochilas ergonómicas certificadas</li>
+                <li>Trolleys para estudiantes</li>
+                <li>Bolsas deportivas</li>
+                <li>Estuches de múltiples diseños</li>
+                <li>Accesorios escolares</li>
+              </ul>
+            </div>
+
+            <div class="col-md-5">
+              <h4 class="text-center">Tecnología Educativa</h4>
+              <ul class="mx-auto" style="width: fit-content">
+                <li>Calculadoras científicas</li>
+                <li>Dispositivos de aprendizaje</li>
+                <li>Accesorios tecnológicos</li>
+                <li>Material de robótica educativa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-center mt-2 mb-4">¿Por Qué Comprar en School Study Shop?</h2>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+        <h4>Calidad Garantizada</h4>
+        <ul>
+          <li>Productos originales de marcas líderes</li>
+          <li>Garantía de satisfacción en todas las compras</li>
+          <li>Devoluciones sin complicaciones</li>
+          <li>Control de calidad en todos nuestros productos</li>
+        </ul>
+      </div>
+
+      <div class="col-md-5">
+        <h4>Ventajas para Clientes</h4>
+        <ul>
+          <li>Envío gratis en pedidos superiores a 30€</li>
+          <li>Sistema de puntos School Study Points</li>
+          <li>Descuentos por volumen para centros educativos</li>
+          <li>Ofertas exclusivas para miembros</li>
+          <li>Newsletter con promociones semanales</li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="row justify-content-center">
+      <div class="col-md-4">
+        <h4>Compra Inteligente</h4>
+        <ul>
+          <li>Packs escolares por nivel educativo</li>
+          <li>Listas escolares personalizadas</li>
+          <li>Reposición automática de material</li>
+          <li>Ahorro en packs completos</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      </section>
+    
+    <!-- Productos -->
+    <div class="container mt-4">
+      <div class="d-flex justify-content-center">
+        <p class="gap-1" id="products">
+          <a
+          class="btn btn-lg btn-primary"
+          style="width: 20em;"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+          >
+          Ver todos los productos
+         </a>
+       </p>
+     </div>
+   </div>
+
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        <div>
+          <h1 class="text-center">Productos</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/cuaderno_arg_1.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuaderno argollado Kiut</h5>
+                <p class="card-text">
+                  Cuarderno argollado de 100 hojas, pasta dura, cuadriculado,
+                  marca Kiut.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$12.000</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Cuaderno argollado Kiut', 12000)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/cuaderno_arg_2.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuaderno argollado Norma</h5>
+                <p class="card-text">
+                  Cuarderno argollado de 100 hojas, pasta dura, cuadriculado,
+                  marca Norma
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$15.000</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Cuaderno argollado Norma', 15000)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/cartuchera_negra.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cartuchera negra</h5>
+                <p class="card-text">
+                  cartuchera escolar negra con cierre de cremallera, bolsillo
+                  principal y un bolsillo lateral pequeño
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$38.500</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Cartuchera negra', 38500)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/cartuchera_rosa.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cartuchera rosada</h5>
+                <p class="card-text">
+                  Cartuchera de color rosa con agaradera, bolsillo principal y
+                  un bolsillo secundario mas pequeño
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$40.000</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Cartuchera rosada', 40000)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/boligrafo_gel_negro.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bolígrafo negro</h5>
+                <p class="card-text">
+                  Bolígrafo retráctil punta fina 0.7 negro en gel
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$7.500</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Bolígrafo negro', 7500)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="img/lapiz_faber_6b.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lápiz de dibujo</h5>
+                <p class="card-text">Lápiz Faber-Castell 6b</p>
+                <p class="card-text">
+                  <small class="text-body-secondary">$4.800</small>
+                </p>
+                <button
+                  class="btn btn-primary"
+                  onclick="agregarAlCarrito('Lápiz de dibujo', 4800)"
+                >
+                  Agregar al Carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    <!-- Footer y Contacto -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Información de la empresa -->
+          <div class="col-md-3 mb-4">
+            <h5>School Study Shop</h5>
+            <p class="small">
+              Tu tienda de confianza para el camino al exito, todo tipo de
+              productos escolares y universitarios.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Enlaces rápidos -->
+
+          <div class="col-md-3 mb-4">
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+              <li><a href="index.html#products" class="text-white text-decoration-none">Productos</a></li>
+              <li><a href="index.html#about" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+              <li><a href="cart.html" class="text-white text-decoration-none">Carrito de compras</a></li>
+              <li><a href="index.html#contact" class="text-white text-decoration-none">Contacto</a></li>
+            </ul>
+          </div>
+
+          
+          
+
+           <!-- Formulario de contacto -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item" id="contact">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               Contáctanos
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                
+                  <div class="col-md-6 mb-4">
+                    <h5>Contáctanos</h5>
+                    <form id="form-contacto" class="mt-3">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" id="nombre" class="form-control" required minlength="3" placeholder="Tu nombre" required />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="correo" class="form-label">Correo electrónico</label>
+                          <input type="email" id="correo" class="form-control" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.a-zA-Z{2, }" placeholder="tucorreo@ejemplo.com" required />
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="3" required minlength="10" maxlength="200"  placeholder="¿En qué podemos ayudarte?" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Copyright -->
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <hr class="bg-light" />
+            <p class="small mb-0">
+              &copy; 2024 School Study Shop. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/products.js"></script>
+  </body>
+</html>
